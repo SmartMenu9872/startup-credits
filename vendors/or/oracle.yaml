@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_f3b83dbd469d441f9ed5a47950
+slug: oracle
+slug_aliases: []
+name: Oracle
+domains:
+  - value: oracle.com
+    role: primary
+    valid_from: 2026-08-06T00:00:00Z
+category: hosting-infra
+description: Oracle provides cloud infrastructure, databases, and developer services for applications and data workloads.
+links:
+  site: https://www.oracle.com/cloud/
+sources:
+  - source_id: src_c61e89263e4e47afa10f3f763a9986fec61e89263e4e47afa10f3f763a9986fe
+    url: https://www.oracle.com/a/ocom/docs/free-cloud.pdf
+programs: []
+offers:
+  - offer_id: off_c9a661ef455d4210aff1e438eb
+    offer_slug: oracle-for-startups
+    offer_slug_aliases: []
+    title: Oracle for Startups
+    summary: Qualifying technology startups can receive $500 in free Oracle Cloud credits, a 70% cloud discount, and startup support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-06T00:00:00Z
+    economics:
+      benefits:
+        - benefit_id: free_cloud_credits
+          description: $500 in free Oracle Cloud credits.
+          kind: credit
+          value:
+            kind: exact
+            amount:
+              currency: USD
+              minor_units: 50000
+        - benefit_id: cloud_discount
+          description: 70% discount on cloud from day one.
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 7000
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: startup_qualification
+        statement: Technology startup of any size in the B2B or B2C technology space, targeting a large addressable market; qualifying status is determined by Oracle.
+        reason: vendor-discretion
+    roles:
+      terms_authority_entity_id: ent_f3b83dbd469d441f9ed5a47950
+      access_operator_entity_id: ent_f3b83dbd469d441f9ed5a47950
+    access:
+      availability: public
+      method: form
+      url: https://www.oracle.com/startup/
+    source_ids:
+      - src_c61e89263e4e47afa10f3f763a9986fec61e89263e4e47afa10f3f763a9986fe
